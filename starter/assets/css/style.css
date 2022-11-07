@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 .imageMercy{
   contain: style;
-  border-radius: 30%;
+  border-radius: 100px;
   margin: 5px;
 }
 
@@ -35,7 +35,7 @@ a{
   font-size: medium;
   font-weight: 400;
 }
-.about{
+#about{
   display: flex;
 }
 
@@ -58,4 +58,5 @@ p {
 .footer{
   background-color: rgb(58, 78, 78);
   position:relative;
+  color: azure;
 }
