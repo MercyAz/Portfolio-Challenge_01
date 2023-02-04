@@ -7,21 +7,20 @@
 }
 
 body {
-  background-color: aliceblue;
-  height: 100%;
+  background-color: rgb(251, 251, 249);
+
 }
 
 header {
-  padding: 20px;
+  padding: 20px; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgb(17, 35, 17);
 
 }
+
 
 header h1 {
   display: inline-block;
   font-size: 48px;
-  color: aliceblue;
 }
 
 
@@ -30,7 +29,7 @@ header nav {
   margin-right: 20px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 20px;;
 }
 
 header nav a {
@@ -41,7 +40,7 @@ header nav a {
 
 /*Global Classes*/
 a {
-  color: rgb(175, 200, 173);
+  color: rgb(17, 20, 17);
   text-decoration: none;
   cursor: pointer;
 }
@@ -56,10 +55,33 @@ p {
   height: 800px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("/Portfolio-Challenge_01/starter/images/seaside.jpg");
   background-size: cover;
   background-position: center;
+  object-position: center top;
 
+}
+
+.hero img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  object-position: center top;
+}
+
+.ImageText {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  backdrop-filter: blur(5px);
 }
 .content {
 
@@ -76,7 +98,7 @@ section {
   padding: 50px;
   height: 300px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color:    rgb(188, 173, 155);
+  background-color:    rgb(255, 255, 255);
   color: rgb(17, 35, 17);
 }
 
