@@ -1,3 +1,10 @@
+:root {
+  --black: #0A090B;
+  --jasmine: #F2D686;
+  --darkred: #4d1801;
+  --red: #9A3002;
+  --gold: #967203;
+}
 /*Reset*/
 
 * {
@@ -35,20 +42,17 @@ header nav a {
   list-style-type: none;
   display: inline-block;
   margin-left: 25px;
+  cursor: pointer;
 }
 
 /*Global Classes*/
 a {
   color: rgb(17, 20, 17);
-  cursor: pointer;
-  text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
   color: rgb(170, 198, 170);
-  background-color: rgb(58, 78, 78);
-  color: white;
 }
 
 p {
@@ -66,54 +70,44 @@ ul {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
 }
 
 li a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  padding: 10px;
   text-decoration: none;
 }
 
 
-/* Custom Styling */
+/* Hero Styling */
 .Hero-Container {
-text-align: center;
-
-}
-.hero {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-
-}
-
-.ProfilePhoto{
-  border-radius: 50px;
-  text-align: center;
-  display: block;
-  margin:auto;
-  margin-bottom: auto;
+height: 800px;
+width:100% ;
+opacity: 0.4;
+margin-bottom: 25px;
+background-image: url('../images/seaside.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 
 }
 
-.ImageText {
+.HeroText {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  backdrop-filter: blur(5px);
+  background: none;
+  z-index: 0;
 }
-.content {
 
+
+.content {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin-left: 20px
 }
 
@@ -123,19 +117,143 @@ text-align: center;
 section {
   margin-bottom:20px;
   padding: 50px;
-  height: 300px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color:    rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   color: rgb(17, 35, 17);
 }
+.About {
+  display: flex;
+  flex-direction:column ;
+}
 
-.contactSection {
+.AboutImage {
+  border-top: 100px;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.AboutImage img {
+  border-radius: 15px 50px;
+  border-color: red;
+}
+.WorkSection {
+  padding: 50px;
+  position: relative;
+
+}
+/* .PortfolioContainer img{
+  display: inline-block;
+  max-width: 200px;
+  height: 250px;
+  padding: 15px;
+  align-items: center;
+  border-style: double;
+  margin-left: 150px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+} */
+.ProjectContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.Portfolio1:hover, .Portfolio2:hover, .Portfolio3:hover, .Portfolio4:hover, .Portfolio5:hover, .Portfolio6:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.Portfolio1, .Portfolio2, .Portfolio3, .Portfolio4, .Portfolio5, .Portfolio6 {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 6px darkgrey;
+  text-align: center;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.Portfolio1 {
+background-image: url('../images/02-portfolio-1.jpg');
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.Portfolio2{
+background-image: url('../images/02-portfolio-2.jpg');
+background-repeat: no-repeat;
+background-position: center;
+
+}
+.Portfolio3{
+  background-image: url('../images/02-portfolio-3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Portfolio4{
+  background-image: url('../images/02-portfolio-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Portfolio5{
+  background-image: url('../images/02-portfolio-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Portfolio6{
+  background-image: url('../images/02-portfolio-3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.PortfolioContent {
+  height: 50%;
+  width: 100%;
+  background: rgba(3, 45, 12, 0.4); 
+  color: #f1f1f1;
+  padding: 20px 40px;
+  
+}
+
+/* .ProjectContainer :hover {
+  box-shadow: 2px 2px 0;
+} */
+
+.PortfolioContent p {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.PortfolioContent a{
+  color: aliceblue;
+}
+
+
+.PortfolioContent a:hover {
+  color: rgb(170, 198, 170)
+
+}
+
+.ContactSection {
   display: block;
+  padding: 20px;
+  margin: 250px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .ContactNav {
   display: block;
   text-align: left;
+  background-color: rgb(251, 251, 249);
 }
 .footerSection {
   display: flex;
