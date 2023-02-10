@@ -1,9 +1,10 @@
 :root {
-  --black: #0A090B;
-  --jasmine: #F2D686;
-  --darkred: #4d1801;
-  --red: #9A3002;
-  --gold: #967203;
+  --Darkgreen: rgb(17, 20, 17) ;
+  --Leafgreen: rgb(17, 35, 17) ;
+  --Seagreen: rgb(170, 198, 170) ;
+  --LightOlivegreen: rgb(251, 251, 249) ;
+  --Darkblue:rgb(28, 35, 35);
+  --Blue:rgb(58, 78, 78); 
 }
 /*Reset*/
 
@@ -14,7 +15,7 @@
 }
 
 body {
-  background-color: rgb(251, 251, 249);
+  background-color:var(--LightOlivegreen);
 
 }
 
@@ -47,12 +48,12 @@ header nav a {
 
 /*Global Classes*/
 a {
-  color: rgb(17, 20, 17);
+  color: var(--Darkgreen);
 }
 
 a:hover {
   text-decoration: none;
-  color: rgb(170, 198, 170);
+  color: var(--Seagreen);
 }
 
 p {
@@ -133,13 +134,13 @@ section {
   padding-top: 5px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .AboutImage img {
   border-radius: 15px 50px;
-  border-color: red;
 }
 .WorkSection {
   padding: 50px;
@@ -148,12 +149,11 @@ section {
 }
 
 .ProjectContainer {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 30px;
 }
 
 .Portfolio1, .Portfolio2, .Portfolio3, .Portfolio4, .Portfolio5, .Portfolio6 {
@@ -174,6 +174,7 @@ section {
   margin-right: 25px;
   transition: 1s;
   margin: 20px;
+  margin-bottom: 20px;
   padding-top: 40px;
 }
 
@@ -186,34 +187,47 @@ article {
 margin-bottom: 20px;
 padding: 10px;
 height: 300px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 background-color: rgb(251, 251, 249);
 color: #ffffff;
 }
 article p {
   color: rgb(28, 35, 35);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: auto;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-article a{
+article a {
   color: rgb(28, 35, 35);
+  height: 300px;
+  margin-bottom: 30px;
+  
 }
 
 
-article a:hover {
+.ProjectText a:hover {
   color: rgb(170, 198, 170)
 
 }
 
 article h2 {
   color: rgb(28, 35, 35);
-  margin: auto ;
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 36px;
   margin-right: 2px;
   margin-bottom:20px;
-  padding: 50px;
+  padding: 10px;
+}
+
+.ProjectText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
 }
 
 .ContactSection {
